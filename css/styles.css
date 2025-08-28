@@ -1,0 +1,90 @@
+/* Paleta 5 – Vibrante / Gaming Modern
+
+Background: #0A0A23 (azul muito escuro)
+
+Texto: #FFFFFF (branco)
+
+Botões principais: #0FF (ciano)
+
+Botões secundários / hover: #50A (azul escuro)
+
+Destaques / alertas: #FF4081 (pink neon) */
+
+
+
+body{
+    background-color: #0A0A23;
+    color:#FFFFFF ;
+}
+
+header{
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 10%, rgba(9, 9, 121, 1) 45%, rgba(0, 212, 255, 1) 100%);
+    padding: 0 1.5rem 1rem;
+}
+
+
+
+.container-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px ;
+}
+
+#img-logo{
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+
+.form-buscar{
+    display: flex;
+    order: 3;
+    width: 200px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    order: 2;
+    font-weight: 600;
+}
+
+
+#btns-nav{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    order: 1;
+    width: 200px;
+    
+    
+}
+
+
+#btn-amigos{
+    background-color: #FFFFFF;
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    
+    
+    
+}
+
+#btn-perfil{
+    background-color: #FFFFFF;
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
