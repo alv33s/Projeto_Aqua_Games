@@ -14,12 +14,14 @@ Destaques / alertas: #FF4081 (pink neon) */
 
 body{
     background-color: #0A0A23;
+    height: 200rem;
 }
 
 header{
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 10%, rgba(9, 9, 121, 1) 45%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 15%, rgba(9, 9, 121, 1) 30%, rgba(0, 212, 255, 1) 60%);
     padding: 0 1.5rem 1rem;
-    position: relative;
+    position:relative;
+    width: 100%;
 }
 
 
@@ -42,6 +44,8 @@ nav{
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
+    position: relative;
+    
     
 }
 
@@ -77,6 +81,7 @@ ul{
     gap:1.5rem;
     order: 2;
     font-weight: 600;
+    font-size: 18px;
 }
 
 ul li a{
@@ -96,7 +101,6 @@ ul li a{
 
 
 #btn-amigos{
-    background-color: #ffffff80;
     width: 65px;
     height: 30px;
     border-radius: 10px;
@@ -108,7 +112,6 @@ ul li a{
 }
 
 #btn-perfil{
-    background-color: #ffffff80;
     width: 65px;
     height: 30px;
     border-radius: 10px;
@@ -118,3 +121,46 @@ ul li a{
 }
 
 
+ .fi.fi-sr-user{
+    font-size: 25px;
+    color: whitesmoke
+}
+
+.fi.fi-sr-users-alt{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+aside{
+    color: whitesmoke;
+    height: 100%;
+    background-color: rgba(0, 212, 255, 1);
+    background: linear-gradient(to bottom,rgba(0, 212, 255, 1) 50%, #0A0A23 90% );
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 15rem;
+    align-items: start;
+    gap: 30px;
+    padding: 60px 0 0 15px;
+    
+}
+
+.btn-side{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+    width: 90%;
+    height: 5rem;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.btn-side:hover{
+    background-color: rgba(61, 182, 230, 0.705);
+    transform: scale(1.1);
+  
+}
