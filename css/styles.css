@@ -13,15 +13,18 @@ Destaques / alertas: #FF4081 (pink neon) */
 
 
 body{
-    background-color: #0A0A23;
+    background-color: #0a0a23;
     height: 200rem;
+
 }
 
 header{
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 15%, rgba(9, 9, 121, 1) 30%, rgba(0, 212, 255, 1) 60%);
     padding: 0 1.5rem 1rem;
-    position:relative;
     width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 1;
 }
 
 
@@ -44,7 +47,6 @@ nav{
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    position: relative;
     
     
 }
@@ -131,9 +133,17 @@ ul li a{
     color: whitesmoke;
 }
 
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
 aside{
     color: whitesmoke;
-    height: 100%;
+    height: 90%;
     background-color: rgba(0, 212, 255, 1);
     background: linear-gradient(to bottom,rgba(0, 212, 255, 1) 50%, #0A0A23 90% );
     display: flex;
@@ -143,6 +153,7 @@ aside{
     align-items: start;
     gap: 30px;
     padding: 60px 0 0 15px;
+    top: 10rem;
     
 }
 
@@ -163,4 +174,67 @@ aside{
     background-color: rgba(61, 182, 230, 0.705);
     transform: scale(1.1);
   
+}
+
+
+
+.section-jogos{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 13rem 0 0 15rem;
+    gap: 5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#jogos-em-destaque{
+    max-width: 100%;
+    height: 40rem;
+    max-height: 100%;
+    display: flex;
+    gap: 5rem;
+
+    
+}
+
+#jogos-em-destaque .img-destaque{
+    height: 40rem;
+    margin: 0 0 0 5%;
+    border-radius: 10px;
+    box-shadow:rgba(0, 212, 255, 1) 0px 0px 20px;
+    object-fit: cover;
+    
+}
+
+#jogos-em-destaque #colunas-de-jogos-em-destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#jogos-em-destaque #colunas-de-jogos-em-destaque div{
+    display: flex;
+    width: 500px;
+    height:100px ;
+    background-color: rgba(0, 213, 255, 0.151) ;
+    border: solid rgba(0, 213, 255, 0.644) ;
+    box-shadow:rgba(0, 212, 255, 1) 0px 0px 5px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 0 0 10px;
+    color: whitesmoke;
+    gap: 10px;
+}
+
+#jogos-em-destaque #colunas-de-jogos-em-destaque div .img-jogo-destaque-coluna{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
 }
