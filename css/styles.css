@@ -1,17 +1,4 @@
-/* Paleta 5 – Vibrante / Gaming Modern
-
-Background: #0A0A23 (azul muito escuro)
-
-Texto: #FFFFFF (branco)
-
-Botões principais: #0FF (ciano)
-
-Botões secundários / hover: #50A (azul escuro)
-
-Destaques / alertas: #FF4081 (pink neon) */
-
-
-
+/* -----------------------------------------------------HEADER---------------------------------------------------------------- */
 body{
     background-color: #0a0a23;
     height: 200rem;
@@ -132,13 +119,13 @@ ul li a{
     font-size: 30px;
     color: whitesmoke;
 }
+/* -------------------------------------------------BARRA LATERAL---------------------------------------------------------- */
 
-main{
+.conteudo-e-sideBar{
     display: flex;
     height: 100%;
     width: 100%;
     position: relative;
-    z-index: -2;
 }
 
 aside{
@@ -177,53 +164,56 @@ aside{
 }
 
 
-
-.section-jogos{
+/* -----------------------------------------------JOGOS EM DESTAQUE------------------------------------------------------- */
+.conteudo-store{
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    padding: 13rem 0 0 15rem;
-    gap: 5rem;
-    z-index: -1;
+    padding: 12rem 0 0 15rem;
+    gap: 10rem;
     height: 100%;
     width: 100%;
+
 
 
 }
 
 #jogos-em-destaque{
     max-width: 100%;
-    height: 40rem;
+    height: 35rem;
     max-height: 100%;
     display: flex;
-    gap: 5rem;
+    gap: 4rem;
+    
 
     
 }
 
 #jogos-em-destaque .img-destaque{
-    height: 40rem;
+    height: 35rem;
     margin: 0 0 0 5%;
     border-radius: 10px;
     box-shadow:rgba(0, 212, 255, 1) 0px 0px 20px;
     object-fit: cover;
+    cursor: pointer;
     
 }
 
 #jogos-em-destaque #colunas-de-jogos-em-destaque {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
     justify-content: center;
+    cursor: pointer;
+    
 }
 
 #jogos-em-destaque #colunas-de-jogos-em-destaque div{
     display: flex;
-    width: 500px;
+    width: 450px;
     height:100px ;
     background-color: rgba(0, 213, 255, 0.151) ;
-    border: solid rgba(0, 213, 255, 0.644) ;
-    box-shadow:rgba(0, 212, 255, 1) 0px 0px 5px;
+    box-shadow:rgba(0, 212, 255, 1) 0px 0px 10px;
     border-radius: 10px;
     align-items: center;
     padding: 0 0 0 10px;
@@ -232,9 +222,159 @@ aside{
 }
 
 #jogos-em-destaque #colunas-de-jogos-em-destaque div .img-jogo-destaque-coluna{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     object-position: center;
     border-radius: 50px;
+}
+
+/* -----------------------------------------------DESCUBRA ALGO NOVO------------------------------------------------------- */
+
+.carroussel-de-jogos{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.titulo-carroussel {
+    text-align: left;
+    padding-left: 3.5rem;
+
+        
+
+}
+
+.titulo-carroussel a{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.jogos-carroussel{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0 20px;
+}
+
+.jogo a{
+    text-align: left;
+}
+
+.jogo figure {
+    text-align: left;
+    font-size: 10px;
+
+}
+.jogo figure figcaption{
+    margin: 10px 0 0;
+
+}
+
+.jogo span {
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.nome-jogo{
+    color: whitesmoke;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.jogos-carroussel img {
+    border-radius: 8px;
+
+}
+
+.jogo{
+    transition: 0.5s;
+    display: flex;
+
+    
+
+}
+
+.jogo figure img:hover{
+    box-shadow:rgba(0, 212, 255, 1) 0 0 10px;
+    transform: scale(1.03);
+}
+
+/* --------------------------------------------ATUALIZAÇÕES DE JOGOS----------------------------------------------------- */
+
+#atualizacoes-de-jogos{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+
+.atualizacao{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inf-atualizacao{
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h4{
+        font-size: 20px;
+    }
+
+    p{
+        color: #808080;
+    }
+}
+
+.atualizacao img{
+    border-radius: 10px;
+}
+
+.saber-mais-atualizacao{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgba(245, 245, 245, 0.24);
+    color: whitesmoke;
+
+}
+
+.saber-mais-atualizacao:hover{
+    transform: scale(1.05);
+}
+
+
+/* --------------------------------------------DESCONTOS EM DESTAQUE----------------------------------------------------- */
+
+.preco-base.desconto{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.porcentagem-de-desconto{
+    display: flex;
+    width: 40px;
+    height: 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: rgba(0, 212, 255, 1) ;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.preco-antigo{
+    text-decoration: line-through;
 }

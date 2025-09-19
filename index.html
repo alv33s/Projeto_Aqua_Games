@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <title>Aqua Games</title>
 </head>
+
 <body>
     <header>
 
-        <div class="container-logo">            
-            <img id="img-logo" src="./img/android-chrome-192x192.png" alt="" >
+        <div class="container-logo">
+            <img id="img-logo" src="./img/android-chrome-192x192.png" alt="">
         </div>
 
         <nav>
 
-            <form class="form-buscar" >
+            <form class="form-buscar">
                 <img id="icon-pesquisa" src="./img/icon-pesquisa.png" alt="">
                 <input class="input-buscar" type="search" placeholder="Search" aria-label="Search">
             </form>
@@ -32,11 +34,11 @@
                 <li><a href="">Lista de Desejos</a></li>
             </ul>
 
-        
+
 
 
             <div id="btns-nav">
-                
+
                 <div id="btn-amigos">
                     <a href="">
                         <i class="fi fi-sr-users-alt"></i>
@@ -46,7 +48,7 @@
                 <div id="btn-perfil">
                     <a href="">
                         <i class="fi fi-sr-user"></i>
-                   </a>
+                    </a>
                 </div>
 
             </div>
@@ -55,7 +57,7 @@
         </nav>
     </header>
 
-    <main>
+    <div class="conteudo-e-sideBar">
         <aside>
             <div class="btn-side">
                 <i class="fi fi-sr-shopping-bag"></i>
@@ -63,28 +65,34 @@
             </div>
             <div class="btn-side">
                 <i class="fi fi-sr-layers"></i>
-                <p>Bibliteca</p>
+                <p>Biblioteca</p>
             </div>
-            
+
             <div class="btn-side">
                 <i class="fi fi-sr-settings"></i>
                 <p>configurações</p>
             </div>
-            
+
         </aside>
 
-        <section class="section-jogos">
+        <main class="conteudo-store">
 
 
-            <div id="jogos-em-destaque">
+
+
+
+
+            <section id="jogos-em-destaque">
                 <img class="img-destaque selecionado" src="./img/img-destaque-CronosTheNewDawn.png" alt="">
                 <div id="colunas-de-jogos-em-destaque">
                     <div>
-                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-CronosTheNewDawn.png " alt="">
+                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-CronosTheNewDawn.png "
+                            alt="">
                         <span>Cronos The New Dawn</span>
                     </div>
                     <div>
-                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-ArenaBreakout.png " alt="">
+                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-ArenaBreakout.png "
+                            alt="">
                         <span>Arena Breakout</span>
                     </div>
                     <div>
@@ -92,33 +100,294 @@
                         <span>Hell Is Us</span>
                     </div>
                     <div>
-                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-LostSoulAside.png " alt="">
+                        <img class="img-jogo-destaque-coluna selecionado" src="./img/img-destaque-LostSoulAside.png "
+                            alt="">
                         <span>Lost Soul Aside</span>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
 
 
 
-            <div class="carroussel-de-jogos">Descubra algo novo</div>
 
 
-            <div id="atualizacoes-de-jogos">Atualizações</div>
 
 
-            <div class="carroussel-de-jogos">Descontos em Destaque</div>
+            <section class="carroussel-de-jogos">
+                <div class="titulo-carroussel">
+                    <a href="">
+                        Descubra algo novo
+                    </a>
+                </div>
+
+                <div class="jogos-carroussel">
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-jogo-hellIsUs-carroussel.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Hell Is Us
+                            </div>
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-jogo-cronos-carroussel.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Cronos The New Dawn
+                            </div>
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/jogo2.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Node The Last Favor Of The Antarii
+                            </div>                            
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/Jogo.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Garten Of Banban 8: Anti Devil
+                            </div>
+                
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-jogo-garfield-carroussel.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Garfield Cart 2 - All you can drift
+                            </div>
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-jogo-lego-voyagers-carroussel.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Lego Voyagers
+                            </div>
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base ">R$ 290</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
 
 
-            <div id="colunas-de-jogos"></div>
 
 
-            <div id="jogos-gratis"></div>
 
 
-        </section>
-    </main>
-    
+            <section id="atualizacoes-de-jogos">
+
+                <article class="atualizacao">
+                    <div class="inf-atualizacao">
+                        <img src="./img/img-atualização-fortnite.png" alt="">
+                        <h4>Fortnite</h4>
+                        <p>O poderoso senhor da guerra e Imperador do Mal assume o comando. O Lorde Zedd já está na
+                            Loja!</p>
+                    </div>
+                    <a href="">
+                        <button class="saber-mais-atualizacao">Saber Mais</button>
+                    </a>
+                </article>
+
+                <article class="atualizacao">
+                    <div class="inf-atualizacao">
+                        <img src="./img/img-atualização-fortnite2.png" alt="">
+                        <h4>Fortnite</h4>
+                        <p>Invoque o poder do Megazord no Battle Royale do Fortnite!</p>
+                    </div>
+                    <a href="">
+                        <button class="saber-mais-atualizacao">Saber Mais</button>
+                    </a>
+
+                </article>
+
+                <article class="atualizacao">
+                    <div class="inf-atualizacao">
+                        <img src="./img/img-atualização-fortnite3.png" alt="">
+                        <h4>Fortnite</h4>
+                        <p>Crie seu próprio destino com Kendo Ronin Errante.</p>
+                    </div>
+                    <a href="">
+                        <button class="saber-mais-atualizacao">Saber Mais</button>
+                    </a>
+                </article>
+
+            </section>
+
+
+
+
+
+            <section class="carroussel-de-jogos">
+                <div class="titulo-carroussel">
+                    <a href="">
+                        Descontos em destaque
+                    </a>
+                </div>
+
+                <div class="jogos-carroussel">
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-ranch-simulator.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Ranch Simulator
+                            </div>
+                            <div class="preco-jogo-carroussel">
+                                <span class="preco-base desconto">
+                                    <div class="porcentagem-de-desconto">80%</div>
+                                    <p class="preco-antigo">R$ 47,49</p>
+                                    <p>R$ 9,49</p>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-hitman.png" alt="">
+                                <figcaption>Edição</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                HITMAN World of Assassination Part One
+                            </div>
+                            <span class="preco-base desconto">
+                                <div class="porcentagem-de-desconto">80%</div>
+                                <p class="preco-antigo">R$ 80,99</p>
+                                <p>R$ 16,19</p>
+                            </span>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-southwest.png" alt="">
+                                <figcaption>Complemento</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Ranch Simulator: SouthWest<br>Ranch & Farm Expansion Pack
+                            </div>                            
+                            <span class="preco-base desconto">
+                                <div class="porcentagem-de-desconto">50%</div>
+                                <p class="preco-antigo">R$ 39,99</p>
+                                <p>R$ 19,99</p>
+                            </span>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-hades.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Hades
+                            </div>
+                
+                            <span class="preco-base desconto">
+                                <div class="porcentagem-de-desconto">75%</div>
+                                <p class="preco-antigo">R$ 73,99</p>
+                                <p>R$ 18,49</p>
+                            </span>
+                        </a>
+                    </article>
+
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-samuraiShodown.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Samurai Shodown
+                            </div>
+                            <span class="preco-base desconto">
+                                <div class="porcentagem-de-desconto">85%</div>
+                                <p class="preco-antigo">R$ 94,99</p>
+                                <p>R$ 14,24</p>
+                            </span>
+                        </a>
+                    </article>
+                    <article class="jogo">
+                        <a href="">
+                            <figure>
+                                <img src="./img/img-descontos-em-destaque-strangeAnquities.png" alt="">
+                                <figcaption>Jogo Base</figcaption>
+                            </figure>
+                            <div class="nome-jogo">
+                                Strange Antiquities
+                            </div>
+                            <span class="preco-base desconto">
+                                <div class="porcentagem-de-desconto">10%</div>
+                                <p class="preco-antigo">R$ 46,99</p>
+                                <p>R$ 42,29</p>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="colunas-de-jogos">colunas-de-jogos</section>
+
+
+            <section id="jogos-gratis">jogos-gratis</section>
+
+
+        </main>
+    </div>
+
 </body>
+
 </html>
